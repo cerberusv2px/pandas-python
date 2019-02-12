@@ -26,6 +26,8 @@ temp_df = pd.DataFrame({
 # print(temp_df.Ktm)
 # print(temp_df.Ktm - temp_df.Pkh)
 
+# print(temp_df.columns)
+
 temp_df['Difference'] = temp_diffs
 print(temp_df)
 print('-----------------------------------------------')
@@ -46,4 +48,7 @@ print('-----------------------------------------------')
 # print(temp_df.loc['2019-02-03'])
 
 # print(temp_df.Ktm > 82)
-print(temp_df[temp_df.Ktm > 82])
+# print(temp_df[temp_df.Ktm > 82])
+
+print(temp_df.loc[temp_df.index.isin([0, 2, 4]), ['Difference', 'Ktm']])
+
