@@ -36,4 +36,12 @@ print('------------------------------')
 # print(m[:, 1:3])
 
 # get items in row position 3 up to but not including 5, all columns
-print(m[3:5, :])
+# print(m[3:5, :])
+
+# selecting specific row or columns
+# print(m[[1, 3, 4], :])
+
+
+''' Reshaping array '''
+
+
